@@ -17,7 +17,7 @@
 
     $message = new Message("alessio.piras64@gmail.com", "francesco.leone81@libero.it", "Campo da calcio", "Ciao, il campo da calcio da lei richiesto è disponibile.", false, true);
 
-    echo $message->getSend();
+    echo $message->getSend() ."<br/>" . $message->getAnswer();
 
     $pushNotification = new PushNotification("alessio.piras64@gmail.com", "francesco.leone81@libero.it", "Campo da calcio", "Ciao, il campo da calcio da lei richiesto è disponibile.", true, "fa-brands fa-whatsapp");
 

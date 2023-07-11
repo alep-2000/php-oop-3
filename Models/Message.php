@@ -13,5 +13,9 @@
         public function getSend(){
             return "Messagge sent";
         }
+
+        public function getAnswer(){
+            return "Answer sent";
+        }
     }
 ?>
