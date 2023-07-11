@@ -9,6 +9,14 @@
             $this->messageNotification = $messageNotification;
         }
 
+        // public function setSender(){
+        //     $this->sender = $sender;
+        // }
+
+        public function getSender(){
+            return $this->sender;
+        }
+
         public function getSend(){
             return "Email sent";
         }
