@@ -12,6 +12,10 @@
             $this->object = $object;
             $this->contents = $contents;
         }
+
+        public function getSend(){
+            return "Sending done";
+        }
     }
     
 ?>

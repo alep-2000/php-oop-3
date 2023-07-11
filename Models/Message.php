@@ -9,5 +9,9 @@
             $this->readNotification = $readNotification;
             $this->responseAcceptance = $responseAcceptance;
         }
+
+        public function getSend(){
+            return "Messagge sent";
+        }
     }
 ?>

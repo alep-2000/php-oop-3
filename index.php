@@ -7,13 +7,22 @@
 
     $communicationSystem = new CommunicationSystem("alessio.piras64@gmail.com", "francesco.leone81@libero.it", "Campo da calcio", "Ciao, il campo da calcio da lei richiesto è disponibile.");
 
+    echo $communicationSystem->getSend();
+
     $attached = new Attached("Attached_1", "Video", date('Y-m-d'));
 
     $email = new Email ("alessio.piras64@gmail.com", "francesco.leone81@libero.it", "Campo da calcio", "Ciao, il campo da calcio da lei richiesto è disponibile.", true, $attached);
     
+    echo $email->getSend();
+
     $message = new Message("alessio.piras64@gmail.com", "francesco.leone81@libero.it", "Campo da calcio", "Ciao, il campo da calcio da lei richiesto è disponibile.", false, true);
 
+    echo $message->getSend();
+
     $pushNotification = new PushNotification("alessio.piras64@gmail.com", "francesco.leone81@libero.it", "Campo da calcio", "Ciao, il campo da calcio da lei richiesto è disponibile.", true, "fa-brands fa-whatsapp");
+
+    echo $pushNotification->getSend();
+
 
     var_dump($communicationSystem);
     var_dump($email);

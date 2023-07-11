@@ -9,5 +9,9 @@
             $this->visibility = $visibility;
             $this->icon = $icon;
         }
+
+        public function getSend(){
+            return "Notification Push sent";
+        }
     }
 ?>

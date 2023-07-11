@@ -8,6 +8,10 @@
             parent::__construct($sender, $recipient, $object, $contents);
             $this->messageNotification = $messageNotification;
         }
+
+        public function getSend(){
+            return "Email sent";
+        }
     }
 
 ?>
