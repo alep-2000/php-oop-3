@@ -1,13 +1,15 @@
 <?php 
     require_once __DIR__ ."/Models/CommunicationSystems.php";
     require_once __DIR__ ."/Models/Email.php";
+    require_once __DIR__ ."/Models/Attached.php";
     require_once __DIR__ ."/Models/Message.php";
     require_once __DIR__ ."/Models/PushNotification.php";
 
     $communicationSystem = new CommunicationSystem("alessio.piras64@gmail.com", "francesco.leone81@libero.it", "Campo da calcio", "Ciao, il campo da calcio da lei richiesto è disponibile.");
 
-    $email = new Email("alessio.piras64@gmail.com", "francesco.leone81@libero.it", "Campo da calcio", "Ciao, il campo da calcio da lei richiesto è disponibile.", true);
-   
+    
+    $email = new Email ("alessio.piras64@gmail.com", "francesco.leone81@libero.it", "Campo da calcio", "Ciao, il campo da calcio da lei richiesto è disponibile.", true, new Attached("Attached_1", "Video", date('Y-m-d')));
+    
     $message = new Message("alessio.piras64@gmail.com", "francesco.leone81@libero.it", "Campo da calcio", "Ciao, il campo da calcio da lei richiesto è disponibile.", false);
 
     $pushNotification = new PushNotification("alessio.piras64@gmail.com", "francesco.leone81@libero.it", "Campo da calcio", "Ciao, il campo da calcio da lei richiesto è disponibile.", true);
