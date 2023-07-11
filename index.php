@@ -21,7 +21,8 @@
 
     $pushNotification = new PushNotification("alessio.piras64@gmail.com", "francesco.leone81@libero.it", "Campo da calcio", "Ciao, il campo da calcio da lei richiesto è disponibile.", true, "fa-brands fa-whatsapp");
 
-    echo $pushNotification->getSend();
+    echo $pushNotification->getSend() ."<br/>" .$pushNotification->getClick();
+    
 
 
     var_dump($communicationSystem);

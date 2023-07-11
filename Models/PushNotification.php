@@ -13,5 +13,9 @@
         public function getSend(){
             return "Notification Push sent";
         }
+
+         public function getClick(){
+            return "I open the message";
+        }
     }
 ?>
