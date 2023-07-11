@@ -12,6 +12,14 @@
         public function getSend(){
             return "Email sent";
         }
+
+        public function getForwarding(){
+            return "Email forwarded";
+        }
+
+        public function getPress(){
+            return "Email printed";
+        }
     }
 
 ?>

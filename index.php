@@ -13,7 +13,7 @@
 
     $email = new Email ("alessio.piras64@gmail.com", "francesco.leone81@libero.it", "Campo da calcio", "Ciao, il campo da calcio da lei richiesto è disponibile.", true, $attached);
     
-    echo $email->getSend();
+    echo "<br/>" .$email->getSend() ."<br/>" .$email->getForwarding() ."<br/>" .$email->getPress() ."<br/>";
 
     $message = new Message("alessio.piras64@gmail.com", "francesco.leone81@libero.it", "Campo da calcio", "Ciao, il campo da calcio da lei richiesto è disponibile.", false, true);
 
