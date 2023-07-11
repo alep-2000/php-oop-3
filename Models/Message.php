@@ -1,11 +1,13 @@
 <?php 
 
     class Message extends CommunicationSystem{
-        private $visibility;
+        private $readNotification;
+        private $responseAcceptance;
 
-        public function __construct($sender, $recipient, $object, $contents, $visibility){
+        public function __construct($sender, $recipient, $object, $contents, $readNotification, $responseAcceptance){
             parent::__construct($sender, $recipient, $object, $contents);
-            $this->visibility = $visibility;
+            $this->readNotification = $readNotification;
+            $this->responseAcceptance = $responseAcceptance;
         }
     }
 ?>
