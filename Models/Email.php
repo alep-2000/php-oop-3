@@ -7,17 +7,16 @@
         public static $color_led = "Yellow";
         
 
-        public function __construct($sender, $recipient, $object, $contents, $messageNotification, Attached $attached){
+        public function __construct($sender, $recipient, $object, $contents, $messageNotification){
             parent::__construct($sender, $recipient, $object, $contents);
             $this->messageNotification = $messageNotification;
-            $this->attached = $attached;
         }
 
-        // public function getAttached(){
-        //     implode(",", $this->$attached);
-        //     return $this->attached;
-        // }
 
+        public function getAttached(){
+            return $this->attached;
+        }
+        
         public function getMessageNotification(){
             return $this->messageNotification;
         }

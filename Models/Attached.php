@@ -2,17 +2,25 @@
     class Attached{
         private $name;
         private $type;
-        private $date;
+        private $dimension;
 
-        public function __construct($name, $type, $date){
+        public function __construct($name, $type, $dimension){
             $this->name = $name;
             $this->type = $type;
-            $this->date = $date;
+            $this->dimension = $dimension;
         }
 
-        // public function getAttached(){
-        //     return $this->name ." " . $this->type . " " .$this->date;
-        // }
+        public function getName(){
+            return $this->name;
+        }
+
+        public function getType(){
+            return $this->type;
+        }
+
+        public function getDimension(){
+            return $this->dimension;
+        }
     }
 
     
