@@ -10,9 +10,9 @@
             $this->date = $date;
         }
 
-        public function getAttached(){
-            return $this->name ." " . $this->type . " " .$this->date;
-        }
+        // public function getAttached(){
+        //     return $this->name ." " . $this->type . " " .$this->date;
+        // }
     }
 
     
